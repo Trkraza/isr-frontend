@@ -38,7 +38,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Revalidate the tag
-    revalidateTag(tag)
+revalidateTag(tag, {})
+
 
     return NextResponse.json({
       revalidated: true,
